@@ -1,0 +1,71 @@
+
+
+<script>
+
+
+//Q1//
+
+let star1 ='';
+
+for(i=9; i>0; i--){
+  for(j=0; i>j; j++){
+    star1 +="*";
+  }
+  star1 += '\n';
+
+}
+console.log(star1);
+
+
+
+//Q2//
+
+let star2 ='';
+
+for(i=1; i<6; i++){
+
+  star2 +=' ';
+
+  for(j=0; j<i; j++){
+    star2 +="*";
+  }
+  star2 +='\n'
+}
+
+console.log(star2);
+
+
+//Q3//
+
+let star3 = '';
+
+for(i=0; i<6; i++){
+  for(j=5; j>i; j--){
+    star3 +=' ';
+  }
+  for(k=0; k<=(2*i); k++){
+    star3 +='*';
+
+  }
+  star3 +='\n';
+}
+
+console.log(star3);
+
+
+
+//Q4//
+
+let year = Number(prompt('년도를 입력하세요'));
+
+function Q4(){
+  if ((year%4===0) && (year%100 !==0) || (year%400 ===0))
+      return alert(`${year}년은 윤년입니다.`)
+  else
+      return alert(`${year}년은 윤년이 아닙니다.`)    
+  
+
+  }
+  Q4()
+
+</script>
